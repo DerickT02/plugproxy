@@ -1,0 +1,17 @@
+{
+  "name": "plugproxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"npx esrun ./src/server.ts"
+  },
+  "keywords": [],
+  "author": "esrun server.ts",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^22.10.5",
+    "esrun": "^3.2.26"
+  }
+}
