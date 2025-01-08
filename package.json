@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"npx esrun ./src/server.ts"
+    "start": "DEBUG=express:* npx tsnd ./src/server.ts"
   },
   "keywords": [],
   "author": "esrun server.ts",
@@ -12,6 +12,10 @@
   "description": "",
   "dependencies": {
     "@types/node": "^22.10.5",
-    "esrun": "^3.2.26"
+    "esrun": "^3.2.26",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
   }
 }
