@@ -1,11 +1,15 @@
-import { createServer } from 'http';
+import  express  from 'express'
 
-const server = createServer((req, res) => {
-    res.statusCode = 200
-    res.setHeader('Content-Type', 'text/plain')
-    res.end("Hello World")
+
+
+
+const app = express()
+app.use(express.static('public'))
+app.get("/", (req: any, res: any) => {
+    console.log()
+    res.sendFile(__dirname + '/public/index.html')
 })
 
-server.listen(3000, () => {
+app.listen(3000, () => {
     console.log("Server is running")
-})
+}) 
